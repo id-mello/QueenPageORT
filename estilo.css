@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap'); /* Nanum Myeongjo*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); /* Anton */
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@1,500;1,700&display=swap'); /* Spectral SC */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap'); /* Parisienne */
+
+p, q, ol li, td{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 15px;
+} 
+
+th{
+    font-family: 'Spectral SC', serif;
+}
+
+section a, input{
+    font-family: 'Spectral SC', serif;
+    font-weight: 500;
+}
+
+ul li{
+    font-family: 'Anton', serif;
+}
+
+h1{
+    font-family: 'Spectral SC', serif;
+    font-weight: 700;
+
+}
+
+h2{
+    font-family: 'Spectral SC', serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f0eb56;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F3F9A7, #f0eb56);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F3F9A7, #f0eb56); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div{
+    border-radius: 4px;
+}
+
+.centrar{
+    max-width: 1200px;
+    min-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boton{
+    background-color: #222;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+
+}
+
+.boton:hover{
+    background-color: #31495f;
+    text-decoration: underline;
+}
+
+
+/* ********** HEADER ********** */
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header div a img{
+    max-height: 200px;
+    max-width: 200px;
+}
+
+/* ********** FIN HEADER ********** */
+
+
+/* ********** NAV ********** */
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #222;
+    
+}
+
+ul li{
+    display: inline-block;
+    width: calc(40% / 3);
+}
+
+ul li a, ul li a:link{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #F3F9A7;
+    border-bottom: 4px solid transparent;
+}
+
+ul li a:hover{
+    border-color: #F3F9A7;
+    transition: border-color .3s ease .3s;
+}
+
+ul li a:active{
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+ul li a.menuActivo{
+    background-color: rgba(255, 255, 255, 0.212);
+    border-bottom: 4px inset #F3F9A7;
+    border-top: 1px inset #222;
+}
+
+/* ********** FIN NAV ********** */
+
+
+/* ********** FOOTER ********** */
+
+footer{
+    margin: 0 auto;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+footer p{
+    padding: 5px;
+    text-align: center;
+}
+
+footer q{
+    display: inline-block;
+    padding: 0 0 20px 0;
+    font-family: 'Parisienne', cursive;
+    font-size: x-large;
+}
+
+footer a img{
+    width: 20px;
+    padding: 5px;
+}
+
+/* ********** FIN FOOTER ********** */
+
+
+/* ********** PRIMER SECTION ********** */
+
+section:nth-of-type(1){
+    padding: 100px;
+    background: url(img/queen-escenario.png);
+    background-size: cover;
+
+}
+
+section:nth-of-type(1) div{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    
+}
+
+
+section h1{   /* PARA TODOS LOS SECTION */
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 2px inset rgba(255, 255, 255, 0.212);
+    margin-bottom: 10px;
+}
+
+section:nth-of-type(1) div>div{
+    width: 40%;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#f3f9a7c4;
+}
+
+section:nth-of-type(1) article>p{
+    padding-bottom: 15px;
+}
+
+
+/* ********** FIN PRIMER SECTION ********** */
+
+
+/* ********** SEGUNDA SECTION / Index ********** */
+
+#home section:nth-of-type(2){
+    padding: 100px;
+    background: url(img/section-noticias.png) fixed;
+    background-size: cover;
+}
+
+#home section:nth-of-type(2)>div{
+    background-color: #eef778c4;
+    padding: 15px;
+}
+
+#home section:nth-of-type(2)>div>div{
+    display: table;
+    padding-top: 15px;
+
+}
+
+
+#home section:nth-of-type(2) article{
+   display: table-cell;
+   width: calc(100% / 2);
+   padding-bottom: 10px;
+}
+
+#home section:nth-of-type(2) article>div{
+    display: flex;
+    
+}
+
+#home section:nth-of-type(2) article figure img{
+    padding-top: 5px;
+    width: 200px;
+    padding-right: 10px;
+}
+
+#home section:nth-of-type(2) article figure + div p{
+    padding: 15px 0;
+    
+}
+
+/* ********** FIN SEGUNDO SECTION / Index ********** */
+
+
+/* ********** TERCER SECTION / Index ********** */
+
+#home section:nth-of-type(3){
+    padding: 100px;
+    background: url(img/queen-escenario.png) fixed;
+    background-size: cover;
+
+}
+
+#home section:nth-of-type(3)>div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0eb56c4;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+
+/* Eventos */
+#home section:nth-of-type(3)>div>div:nth-of-type(1){
+    width: 50%;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td{
+    border: 4px outset rgba(255, 255, 255, 0.212);
+    text-align: center;
+}
+
+tr:hover{
+    outline: 4px outset rgba(58, 58, 51, 0.466);
+}
+
+/* Comprar Tickets */
+
+#home section:nth-of-type(3)>div>div:nth-of-type(2){
+    width: 40%;
+}
+
+#home section:nth-of-type(3)>div>div:nth-of-type(2) h2, fieldset, p{
+    padding-bottom: 10px;
+    border: none;
+}
+
+fieldset:nth-of-type(1)>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset:nth-of-type(1)>div>div:nth-child(1) {
+   width: 60%;
+}
+
+fieldset:nth-of-type(1) div:nth-of-type(2){
+    width: 30%;
+}
+
+fieldset:nth-of-type(1) input, select{
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 2px inset rgba(255, 255, 255, 0.212);
+}
+
+fieldset:nth-of-type(3){
+   display: flex;
+   justify-content: space-between;
+}
+
+fieldset:nth-of-type(3) div:last-child{
+    padding: 5px 0 5px;
+}
+
+form>p{
+    border-bottom: 2px inset rgba(255, 255, 255, 0.212);
+    margin-bottom: 10px;
+}
+
+/* ********** FIN TERCER SECTION / Index ********** */
+
+
+
+/* ********** SEGUNDO SECTION / Conocenos ********** */
+
+#conocenos section:nth-of-type(2){
+    padding: 100px;
+    background: url(img/section-biografia.png) fixed;
+    background-size: cover;
+
+}
+
+#conocenos section:nth-of-type(2)>div{
+    background-color: #eef778c4;
+    padding: 15px;
+    
+}
+
+#conocenos section:nth-of-type(2)>div article {
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: 20px; 
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+#conocenos section:nth-of-type(2) article div:nth-child(1){
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+}
+#conocenos section:nth-of-type(2) article div:nth-last-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#conocenos section:nth-of-type(2) a{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#conocenos section:nth-of-type(2) article figure img{
+    width: 600px;
+}
+
+
+/* ********** FIN SEGUNDO SECTION / Conocenos ********** */
+
+/* ********** TERCER SECTION / Conocenos ********** */
+
+#conocenos section:nth-of-type(3){
+    padding: 100px;
+    background: url(img/queen-escenario.png) fixed;
+    background-size: cover;
+
+}
+
+#conocenos section:nth-of-type(3)>div div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#conocenos section:nth-of-type(3) ol, p, h2{
+    padding-bottom: 10px;
+}
+
+#conocenos section:nth-of-type(3) article figure img{
+    width: 200px;
+}
+
+/* DISCOGRAFÍA */
+#conocenos section:nth-of-type(3)>div>div:nth-of-type(1){
+    background-color: #f0eb56c4;
+    padding: 15px; 
+}
+
+#conocenos section:nth-of-type(3) div:nth-of-type(1)>article{
+    width: calc(100% / 2);
+    display: flex;
+    padding-top: 15px;
+}
+
+ol{
+    list-style-position: inside;
+}
+
+#conocenos section:nth-of-type(3) div > article > div{
+    padding-left: 10px;
+}
+
+/* INTEGRANTES */
+
+#conocenos section:nth-of-type(3)>div div:nth-of-type(2){
+    background-color: #f0eb56c4;
+    padding: 15px;    
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+#conocenos section:nth-of-type(3)>div div:nth-of-type(2)>article{
+    width: calc(100% / 5);
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+/* ********** FIN TERCER SECTION / Conocenos ********** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer q:hover{
+    background: url(img/easter-egg.png) center no-repeat;
+    width: 100%;
+    height: 130vmax;
+}

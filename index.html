@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es-la">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Queen - Sitio oficial de la banda</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" href="img/crown.png">
+    <meta name="Desctiption" content="Sitio oficial de la banda legendaria Queen. Acá podrás encontrar su historia,
+    discografía, comprar tickets de las giras y podrás acceder a la tienda online de la banda.">
+    <meta name="robots"  content="NOINDEX, NOFOLLOW">
+</head>
+<body>
+    <header>
+        <div class="centrar">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de Queen">
+            </a>
+            <a href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" target="_blank">
+                <img src="img/Spotify_Logo_RGB_Black.png" alt="Logo de Spotify para ingresar a su pagina y escuchar a Queen">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="menuActivo">HOME</a>
+            </li><li>
+                <a href="conocenos.html">CONOCENOS</a>
+            </li><li>
+                <a href="#">TIENDA</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <section>
+            <div class="centrar">
+                <div>           
+                    <h1>Bienvenidos!</h1>
+                    <article>
+                        <p>
+                            <q>
+                                Is this the real life? Is this just fantasy?
+                                Caught in a landslide, no escape from reality,
+                                Open your eyes, look up to the skies and see...
+                            </q>
+                        </p>
+                        <p>    
+                            Aquí podrás disfrutar y conocer nuestra historia, 
+                            discografía, giras, noticias de la banda y mucho más.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="centrar">
+                <h1>
+                    Noticias
+                </h1>
+                <div>  
+                    <article>
+                        <div>
+                            <figure>
+                                <img src="img/bohemian-rhapsody.png" alt="Portada de la película Bohemian Rhapsody." title="Portada de la película Bohemian Rhapsody.">
+                            </figure>
+                            <div>
+                                <h2>"Bohemian Rhapsody" se lleva todos los aplausos.</h2>
+                                <p>
+                                    <cite>"Bohemian Rhapsody"</cite> causó un impacto positivo en el público y la crítica especializada. 
+                                    
+                                    Fue galardonada con numerosos premios, entre ellos: cuatro <cite>Óscars</cite>, 
+                                    dos <cite>Globos de Oro</cite> y dos <cite>BAFTA</cite>. 
+                                </p>
+                                <a href="#" class="boton">AMPLIAR</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <figure>
+                                <img src="img/the-neal-preston-photographs.png" alt="Portada del libro de fotos del fotógrafo Neal Preston." title="Portada del libro de fotos del fotógrafo Neal Preston.">
+                            </figure>
+                            <div>
+                                <h2>
+                                    Pre-compra Ahora: Edición Exclusiva - 'Queen: The Neal Preston Photographs'
+                                </h2>
+                                <p>
+                                    El libro oficial sobre <cite>Queen</cite>, una de las más grandes bandas de rock de todos los tiempos, 
+                                    fotografiada por uno de los más grandes fotógrafos del rock de todos los tiempos, 
+                                    incluye textos de <cite>Brian May</cite> y <cite>Roger Taylor</cite>, y relatos íntimos por parte de <cite>Neal Preston</cite>, 
+                                    revelando las historias detrás de las imágenes.
+                                </p>
+                                <a href="#" class="boton">AMPLIAR</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>     
+            </div>
+        </section>
+        <section>
+
+            <div class="centrar">
+                <h1>
+                    Agenda
+                </h1>
+                <div>
+                    <h2>Eventos</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th> <th>Hora</th> <th>Lugar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>26/05/2021</td> <td>22:00Hs</td> <td>París, Francia / AccorHotels Arena</td>
+                            </tr>
+                            <tr>
+                                <td>27/05/2021</td> <td>17:00Hs</td> <td>Antwerp, Bélgica / Sportspalais</td>
+                            </tr>
+                            <tr>
+                                <td>30/05/2021</td> <td>20:30Hs</td> <td>Amsterdam, Holanda / Ziggo Dome</td>
+                            </tr>
+                            <tr>
+                                <td>07/06/2021</td> <td>20:00Hs</td> <td>Londres, UK / O2</td>
+                            </tr>
+                            <tr>
+                                <td>24/06/2021</td> <td>21:00Hs</td> <td>Berlin, Alemania / Mercedes-Benz Arena</td>
+                            </tr>
+                            <tr>
+                                <td>29/06/2021</td> <td>18:00Hs</td> <td>Munich, Alemania / Olympiahalle</td>
+                            </tr>
+                            <tr>
+                                <td>06/07/2021</td> <td>19:30Hs</td> <td>Madrid, España / Wizink Centre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h2>Comprar Tickets</h2>
+                    <form action="procesar.php" method="POST" enctype="multipart/form-data" autocomplete="off">
+                            <p>
+                                (*) Campos obligatorios / Máx. 5 entradas por compra.
+                            </p>
+                            <fieldset>
+                                <div>
+                                    <div>
+                                        <label for="txtNombreApellido">Nombre y Apellido (*)</label>
+                                        <input type="text" placeholder="Ej. Ignacio de Mello" id="txtNombreApellido" name="nombreApellido" required>
+                                    </div>
+                                    <div>
+                                        <label for="txtCantidadEntradas">Cantidad (*)</label>
+                                        <input type="number" placeholder="Ej. 2" id="txtCantidadEntradas" max="5" min="1" name="cantidadEntradas" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Evento (*)</legend>
+                                <select name="Eventos" id="comboEventos" required>
+                                    <option value="" selected disabled hidden>Lista de eventos</option>
+                                    <option value="accorHotelsArena">París, Francia / AccorHotels Arena</option>
+                                    <option value="sportspalais">Antwerp, Bélgica / Sportspalais</option>
+                                    <option value="ziggoDome">Amsterdam, Holanda / Ziggo Dome</option>
+                                    <option value="o2">Londres, UK / O2</option>
+                                    <option value="mercedesBenzArena">Berlin, Alemania / Mercedes-Benz Arena</option>
+                                    <option value="olympiahalle">Munich, Alemania / Olympiahalle</option>
+                                    <option value="wizinkCentre">Madrid, España / Wizink Centre</option>
+                                </select>
+                            </fieldset>
+                            <fieldset>
+                                <div>
+                                <legend>Forma de Pago (*)</legend>
+                                <input type="radio" id="chekCredito" name="tipoPago" value="credito" required>
+                                <label for="chekCredito">Crédito</label>
+                                <input type="radio" id="chekDebito" name="tipoPago" value="debito" required    >
+                                <label for="chekDebito">Débito</label>
+                                </div>
+                                <div>
+                                    <input type="submit" value="COMPRAR" id="bttnComprar" class="boton">
+                                </div>
+                            </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Seguinos!</p>
+            <a href="https://www.instagram.com/officialqueenmusic/?hl=es-la" target="_blank"><img src="img/029-instagram.png" alt="Icono de Instagram"></a>
+            <a href="https://www.youtube.com/user/queenofficial?hl=es" target="_blank"><img src="img/001-youtube.png" alt="Icono de Youtube"></a>
+            <a href="https://twitter.com/queenwillrock?lang=es" target="_blank"><img src="img/008-twitter.png" alt="Icono de Twitter"></a>
+            <a href="https://es-la.facebook.com/Queen" target="_blank"><img src="img/036-facebook.png" alt="Icono de Facebook"></a>
+        </div>
+        <p>
+            <q>Dedicated to the immortal spirit of Freddie Mercury</q>
+        </p>
+    </footer>
+</body>
+</html>
+
